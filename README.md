@@ -32,5 +32,6 @@ Start enable the service
 sudo systemctl daemon-reload
 sudo systemctl start myapp
 sudo systemctl enable myapp
+sudo journalctl -u myapp -e
 ~~~
 
