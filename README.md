@@ -35,3 +35,15 @@ sudo systemctl enable myapp
 sudo journalctl -u myapp -e
 ~~~
 
+# Follow logs live
+sudo journalctl -u your-service.service -f
+
+# Last 100 lines
+sudo journalctl -u your-service.service -n 100 --no-pager
+
+# Logs from the current boot
+sudo journalctl -u your-service.service -b
+
+# Logs from the last hour
+sudo journalctl -u your-service.service --since "1 hour ago"
+
